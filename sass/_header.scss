@@ -26,12 +26,18 @@
     justify-self: start;
   }
 
-  //   &__seenon-text {
-  //   }
+  &__seenon-text {
+  }
 
   &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+
     img {
+      justify-self: center;
       height: 2.5rem;
+      filter: brightness(70%);
     }
   }
 }

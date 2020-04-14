@@ -182,8 +182,20 @@ body {
       justify-self: start;
 }
 
+.header__seenon-logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3rem;
+}
+
 .header__seenon-logos img {
+  -ms-grid-column-align: center;
+      justify-self: center;
   height: 2.5rem;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 .realtors {
