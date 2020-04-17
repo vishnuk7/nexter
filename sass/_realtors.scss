@@ -11,12 +11,23 @@
     grid-column: 1/-1;
   }
 
+  .heading-3 {
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 3rem;
+    }
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 2rem 0;
+      grid-template-columns: repeat(3, min-content max-content);
+    }
   }
 
   &__img {
